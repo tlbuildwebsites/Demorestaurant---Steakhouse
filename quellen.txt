@@ -1,0 +1,93 @@
+QUELLEN – Demorestaurant (Demo-Website)
+============================================
+
+Alle Fotos und Videos stammen von Pexels (https://www.pexels.com) und stehen unter der
+Pexels-Lizenz (https://www.pexels.com/license/): kostenlos nutzbar, auch kommerziell,
+Namensnennung nicht erforderlich, aber hier freiwillig aufgeführt.
+Die Bilder wurden verkleinert und ins WebP-Format umgewandelt, die Videos gekürzt,
+ohne Ton und komprimiert (alle unter 3 MB).
+Es werden keine Bilder echter Restaurants für Werbezwecke verwendet; Personen und
+Orte auf den Stockbildern haben keinen Bezug zum fiktiven Demorestaurant.
+
+FOTOS
+-----
+img/hero-steak.webp (+ hero-steak-sm.webp)
+   Foto: Valeria Boltneva – https://www.pexels.com/photo/1639561/
+img/tbone-flammen.webp (+ tbone-flammen-sm.webp)
+   Foto: Mohamed Olwy – https://www.pexels.com/photo/36683027/
+img/ribeye-roh.webp (+ ribeye-roh-sm.webp)
+   Foto: Nadin Sh – https://www.pexels.com/photo/34003521/
+img/ribeye-dunkel.webp (+ ribeye-dunkel-sm.webp)
+   Foto: Nadin Sh – https://www.pexels.com/photo/34003518/
+img/filet.webp (+ filet-sm.webp)
+   Foto: Valeria Boltneva – https://www.pexels.com/photo/1639563/
+img/filet-mignon.webp (+ filet-mignon-sm.webp)
+   Foto: Nadin Sh – https://www.pexels.com/photo/34433608/
+img/entrecote.webp (+ entrecote-sm.webp)
+   Foto: Nadin Sh – https://www.pexels.com/photo/34434635/
+img/tbone.webp (+ tbone-sm.webp)
+   Foto: Valeria Boltneva – https://www.pexels.com/photo/27305263/
+img/tomahawk-grill.webp (+ tomahawk-grill-sm.webp)
+   Foto: Mohamed Olwy – https://www.pexels.com/photo/36683003/
+img/tomahawk-brett.webp (+ tomahawk-brett-sm.webp)
+   Foto: Mohamed Olwy – https://www.pexels.com/photo/36750232/
+img/tomahawk-flamme.webp (+ tomahawk-flamme-sm.webp)
+   Foto: FIRA ERGASHEVV – https://www.pexels.com/photo/28272277/
+img/marmorierung.webp (+ marmorierung-sm.webp)
+   Foto: Jonathan Borba – https://www.pexels.com/photo/36319690/
+img/metzger.webp (+ metzger-sm.webp)
+   Foto: Dana Sredojevic – https://www.pexels.com/photo/13279400/
+img/chef-fleisch.webp (+ chef-fleisch-sm.webp)
+   Foto: Los Muertos Crew – https://www.pexels.com/photo/8477063/
+img/chef-anrichten.webp (+ chef-anrichten-sm.webp)
+   Foto: Amar Preciado – https://www.pexels.com/photo/36904788/
+img/tatar.webp (+ tatar-sm.webp)
+   Foto: Valeria Boltneva – https://www.pexels.com/photo/16966987/
+img/rotwein.webp (+ rotwein-sm.webp)
+   Foto: Doğu Tuncer – https://www.pexels.com/photo/14978299/
+img/weinkeller.webp (+ weinkeller-sm.webp)
+   Foto: Javier Balseiro – https://www.pexels.com/photo/39478699/
+img/steak-wein.webp (+ steak-wein-sm.webp)
+   Foto: Richard L – https://www.pexels.com/photo/32738701/
+img/tisch-kerzen.webp (+ tisch-kerzen-sm.webp)
+   Foto: leonardomartin pagano – https://www.pexels.com/photo/37968303/
+img/tisch-warm.webp (+ tisch-warm-sm.webp)
+   Foto: Valeria Boltneva – https://www.pexels.com/photo/29962487/
+img/schokokuchen.webp (+ schokokuchen-sm.webp)
+   Foto: zeynep uluç – https://www.pexels.com/photo/28402363/
+img/pommes.webp (+ pommes-sm.webp)
+   Foto: Jahra Tasfia Reza – https://www.pexels.com/photo/39851023/
+img/gemuese.webp (+ gemuese-sm.webp)
+   Foto: Askar Abayev – https://www.pexels.com/photo/5637760/
+img/filet-pilze.webp (+ filet-pilze-sm.webp)
+   Foto: Valeria Boltneva – https://www.pexels.com/photo/36183182/
+img/steaks-feuer.webp (+ steaks-feuer-sm.webp)
+   Foto: Mohamed Olwy – https://www.pexels.com/photo/36543125/
+img/steak-rauch.webp (+ steak-rauch-sm.webp)
+   Foto: Mohamed Olwy – https://www.pexels.com/photo/36683006/
+
+VIDEOS
+------
+video/hero-flammen.mp4 (+ hero-flammen-mobil.mp4, Poster)
+   «Close-Up Shot of a Blazing Fire» – TYPHOON BRO – https://www.pexels.com/video/4315396/
+video/grill-flammen.mp4 (+ Poster)
+   «Grilled Steak Cooking on a Barbecue Grill» – IslandHopper X – https://www.pexels.com/video/35579074/
+video/steak-kohle.mp4 (+ Poster)
+   «Charcoal Grilling A Piece Of Steak» – Pressmaster – https://www.pexels.com/video/3209830/
+video/glut.mp4 (+ Poster)
+   «Close up View of Glowing Embers in a Grill» – Florian Delée – https://www.pexels.com/video/13220869/
+
+SCHRIFTEN (lokal eingebunden, SIL Open Font License 1.1)
+------------------------------------------------------
+fonts/big-shoulders-display-*.woff2  – Big Shoulders Display, Patric King – https://fonts.google.com/specimen/Big+Shoulders+Display
+fonts/cormorant-garamond-*.woff2     – Cormorant Garamond, Christian Thalmann – https://fonts.google.com/specimen/Cormorant+Garamond
+fonts/manrope-*.woff2                – Manrope, Mikhail Sharanda – https://fonts.google.com/specimen/Manrope
+
+LOGO & GRAFIKEN
+---------------
+img/logo.svg, img/favicon.svg, Icons, Rinder-Grafik, Steak-Querschnitte und Karte:
+selbst gestaltet für diese Demo-Website.
+
+HINWEIS
+-------
+Das Demorestaurant, Demostadt, alle Personen, Adressen und Kontaktdaten sind frei erfunden.

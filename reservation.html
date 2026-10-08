@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservation – Demorestaurant</title>
+  <meta name="description" content="Tisch reservieren im Demorestaurant (Demo-Formular ohne echte Funktion).">
+  <meta name="theme-color" content="#0e0d0c">
+  <meta property="og:title" content="Reservation – Demorestaurant">
+  <meta property="og:description" content="Tisch reservieren im Demorestaurant (Demo-Formular ohne echte Funktion).">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/big-shoulders-display-normal-600-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-normal-400-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <svg class="sr-only" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="arc-top" d="M24,100 A76,76 0 0 1 176,100"/>
+    <path id="arc-bottom" d="M14,100 A86,86 0 0 0 186,100"/>
+  </defs>
+  <symbol id="stamp-ring" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="98" fill="#141211"/>
+    <circle cx="100" cy="100" r="95" fill="none" stroke="#c8a165" stroke-width="2.5"/>
+    <circle cx="100" cy="100" r="90" fill="none" stroke="#c8a165" stroke-width=".8"/>
+    <circle cx="100" cy="100" r="64" fill="none" stroke="#c8a165" stroke-width=".8"/>
+    <text font-family="'Big Shoulders Display', 'Arial Narrow', Impact, sans-serif" font-weight="800" font-size="17" letter-spacing="2.6" fill="#c8a165"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">DEMORESTAURANT</textPath></text>
+    <text font-family="'Big Shoulders Display', 'Arial Narrow', Impact, sans-serif" font-weight="700" font-size="11.5" letter-spacing="3" fill="#c8a165"><textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">DEMOSTADT · SEIT 2009</textPath></text>
+    <path d="M18,100 l3,-2.6 3,2.6 -3,2.6z M176,100 l3,-2.6 3,2.6 -3,2.6z" fill="#b8733f"/>
+  </symbol>
+  <symbol id="stamp-core" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="60" fill="#141211" stroke="#c8a165" stroke-width="2"/>
+    <path d="M100,94 C84,94 76,84 77,72 C78,60 88,54 90,44 C96,52 98,58 97,64 C102,58 104,52 103,46 C114,56 124,68 123,78 C122,88 114,94 100,94 Z" fill="#b8733f"/>
+    <path d="M100,92 C93,92 89,87 90,81 C91,75 96,72 97,66 C101,72 108,77 108,83 C108,88 105,92 100,92 Z" fill="#e3b779"/>
+    <path d="M38,100 L162,100 L155,110.5 L162,121 L38,121 L45,110.5 Z" fill="#6b1420" stroke="#c8a165" stroke-width="1.2"/>
+    <text x="100" y="115.5" text-anchor="middle" font-family="'Big Shoulders Display', 'Arial Narrow', Impact, sans-serif" font-weight="800" font-size="13" letter-spacing="2.4" fill="#efe6d6">STEAKHOUSE</text>
+    <text x="100" y="140" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-size="11" fill="#c8a165">Feuer &amp; Fleisch</text>
+    <path d="M86,150 l1.5,3 3.3,.4 -2.4,2.3 .6,3.3 -3,-1.6 -3,1.6 .6,-3.3 -2.4,-2.3 3.3,-.4z M100,150 l1.5,3 3.3,.4 -2.4,2.3 .6,3.3 -3,-1.6 -3,1.6 .6,-3.3 -2.4,-2.3 3.3,-.4z M114,150 l1.5,3 3.3,.4 -2.4,2.3 .6,3.3 -3,-1.6 -3,1.6 .6,-3.3 -2.4,-2.3 3.3,-.4z" fill="#c8a165"/>
+  </symbol>
+  <symbol id="stamp" viewBox="0 0 200 200"><use href="#stamp-ring"/><use href="#stamp-core"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-glass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-.6 5.5a4.4 4.4 0 0 1-8.8 0z"/><path d="M12 13v8M8 21h8"/><path d="M7.4 7h9.2" opacity=".6"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 44c-8 0-13-5.5-12.5-12.5S19 21 20 14c4 4.5 5 8 4.4 11.5C27.5 22 29 18 28 14c6.5 5.5 9.5 12.5 9 18.5S32 44 24 44z"/><path d="M24 42c-3.5 0-5.6-2.6-5-6s3.4-5 4-8.5c2.6 3.4 6.4 5.8 6.4 9.4 0 3-2.2 5.1-5.4 5.1z"/></symbol>
+  <symbol id="i-clock48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="5" width="30" height="38" rx="2"/><path d="M14 12h20M14 18h20M14 24h20M14 30h12"/><circle cx="34" cy="36" r="7" fill="#0e0d0c"/><path d="M34 32.5V36l2.4 1.6"/></symbol>
+  <symbol id="i-farm" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 42h40M8 42V22l10-8 10 8v20"/><path d="M14 42V30h8v12M28 26h12v16"/><path d="M34 26V14l4-4 4 4v12"/><path d="M4 42c6-4 10-4 16 0"/></symbol>
+  <symbol id="i-knife" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M6 36 34 8c4 4 4 12-2 18L20 38z"/><path d="m20 38 4 4 4-4-4-4M30 42l12-12"/><circle cx="36" cy="36" r="1.2"/></symbol>
+  <symbol id="i-train" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="12" y="6" width="24" height="30" rx="5"/><path d="M12 22h24M18 30h.01M30 30h.01M16 42l4-6M32 42l-4-6"/></symbol>
+  <symbol id="i-car" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M6 32V24l5-10h26l5 10v8z"/><path d="M6 24h36M10 32v5h6v-5M32 32v5h6v-5"/><circle cx="14" cy="28" r="1.3"/><circle cx="34" cy="28" r="1.3"/></symbol>
+  <symbol id="i-bike" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="32" r="8"/><circle cx="36" cy="32" r="8"/><path d="m12 32 7-14h12l5 14M19 18l7 14h10M17 12h6M30 12h5l-4 6"/></symbol>
+</svg>
+  <div class="page-curtain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Demorestaurant – zur Startseite">
+      <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true"><use href="#stamp"/></svg>
+      <span class="brand-name">Demorestaurant<small>Steakhouse · Demostadt</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="speisekarte.html">Speisekarte</a></li>
+        <li><a href="fleisch-guide.html">Fleisch-Guide</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="oeffnungszeiten.html">Öffnungszeiten</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a class="btn nav-cta" href="reservation.html">Tisch reservieren</a>
+      <p class="nav-meta">Feuerstrasse 12 · 9999 Demostadt<br><a href="tel:+41440000000">044 000 00 00</a></p>
+    </nav>
+    <a class="btn btn--small header-cta" href="reservation.html">Reservieren</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="sr-only">Menü öffnen</span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="img/steak-rauch-sm.webp" srcset="img/steak-rauch-sm.webp 427w, img/steak-rauch.webp 900w" sizes="100vw" width="900" height="1600" alt="Steak mit Rauch auf dem Grill" fetchpriority="high" decoding="async"></div>
+      <div class="wrap">
+        <p class="eyebrow">Reservation</p>
+        <h1><span class="script">Wir halten den Grill warm</span>Tisch reservieren</h1>
+        <p class="lead" data-reveal style="--d:.2s">Reservieren Sie Ihren Tisch bequem online – oder rufen Sie uns an unter 044 000 00 00.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="split split--wide-left" style="align-items:start">
+          <div class="form-panel" data-reveal>
+            <p class="demo-note"><svg aria-hidden="true" focusable="false"><use href="#i-info"/></svg><span>Dies ist ein Demo-Formular. Es werden keine Daten gesendet oder gespeichert, und es entsteht keine echte Reservation.</span></p>
+            <form class="form" data-demo="res-ok" novalidate>
+              <div class="field">
+                <label for="datum">Datum</label>
+                <input type="date" id="datum" name="datum" required>
+                <p class="hint">Montag ist Ruhetag.</p>
+              </div>
+              <div class="field">
+                <label for="zeit">Uhrzeit</label>
+                <select id="zeit" name="zeit" required><option value="" disabled selected>Bitte wählen</option><optgroup label="Mittag (Sa &amp; So)"><option>11:30</option><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option></optgroup><optgroup label="Abend"><option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option></optgroup></select>
+              </div>
+              <fieldset class="field guests full">
+                <legend>Anzahl Personen</legend>
+                <input type="radio" name="personen" id="p1" value="1"><label for="p1">1</label><input type="radio" name="personen" id="p2" value="2" checked><label for="p2">2</label><input type="radio" name="personen" id="p3" value="3"><label for="p3">3</label><input type="radio" name="personen" id="p4" value="4"><label for="p4">4</label><input type="radio" name="personen" id="p5" value="5"><label for="p5">5</label><input type="radio" name="personen" id="p6" value="6"><label for="p6">6</label><input type="radio" name="personen" id="p7" value="7"><label for="p7">7</label><input type="radio" name="personen" id="p8" value="8"><label for="p8">8</label>
+                <p class="hint" style="width:100%">Ab 9 Personen bitte telefonisch reservieren.</p>
+              </fieldset>
+              <div class="field">
+                <label for="name">Vor- und Nachname</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="tel">Telefon</label>
+                <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="079 000 00 00" required>
+              </div>
+              <div class="field full">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="anlass">Anlass</label>
+                <select id="anlass" name="anlass">
+                  <option>Kein besonderer Anlass</option><option>Geburtstag</option><option>Jahrestag</option><option>Geschäftsessen</option><option>Date Night</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="platz">Sitzplatz-Wunsch</label>
+                <select id="platz" name="platz">
+                  <option>Egal</option><option>Chef's Table am Grill</option><option>Fensterplatz</option><option>Lounge &amp; Bar</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="nachricht">Wünsche, Allergien, Tomahawk-Vorbestellung</label>
+                <textarea id="nachricht" name="nachricht" placeholder="z. B. «Tomahawk für 2, eine Person isst glutenfrei»"></textarea>
+              </div>
+              <label class="check full"><input type="checkbox" name="ok" required><span>Ich habe verstanden, dass dies eine Demo ist und keine Reservation ausgelöst wird.</span></label>
+              <div class="full"><button class="btn" type="submit">Reservation absenden</button></div>
+            </form>
+          </div>
+          <aside>
+            <p class="eyebrow" data-reveal>Gut zu wissen</p>
+            <h2 data-reveal style="--d:.1s">Ihr Besuch</h2>
+            <ul class="info-list" style="margin-top:28px">
+              <li data-reveal style="--d:.15s"><svg aria-hidden="true" focusable="false"><use href="#i-clock"/></svg><div><strong>15 Minuten</strong><span>So lange halten wir Ihren Tisch frei. Bei Verspätung rufen Sie uns bitte an.</span></div></li>
+              <li data-reveal style="--d:.2s"><svg aria-hidden="true" focusable="false"><use href="#i-info"/></svg><div><strong>Annullation</strong><span>Kostenlos bis 24 Stunden vorher. Für Gruppen gelten besondere Bedingungen.</span></div></li>
+              <li data-reveal style="--d:.25s"><svg aria-hidden="true" focusable="false"><use href="#i-flame"/></svg><div><strong>Tomahawk</strong><span>Bitte bei der Reservation vorbestellen – er braucht Zeit.</span></div></li>
+              <li data-reveal style="--d:.3s"><svg aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><div><strong>Lieber persönlich?</strong><a href="tel:+41440000000">044 000 00 00</a></div></li>
+            </ul>
+            <div class="frame frame--tall frame--gold" data-reveal="clip" style="margin-top:36px">
+              <img src="img/rotwein-sm.webp" srcset="img/rotwein-sm.webp 507w, img/rotwein.webp 1067w" sizes="(max-width: 900px) 90vw, 35vw" width="1067" height="1600" alt="Ein Glas Rotwein auf einem gedeckten Tisch" loading="lazy" decoding="async">
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="success" id="res-ok" aria-labelledby="res-ok-t">
+      <div class="success__inner">
+        <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true"><use href="#stamp"/></svg>
+        <h2 id="res-ok-t">Fast geschafft!</h2>
+        <p data-summary>Danke!</p>
+        <button class="btn" type="button" data-close>Schliessen</button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wood-band" aria-hidden="true"></div>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true"><use href="#stamp"/></svg>
+        <p>Steakhouse mit Fine-Dining-Seele. Ausgewählte Cuts, 800&nbsp;°C heisser Grill und eine Weinkarte, die Fleisch liebt.</p>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <address>
+          Demorestaurant<br>Feuerstrasse 12<br>9999 Demostadt<br>
+          <a href="tel:+41440000000">044 000 00 00</a><br>
+          <a href="mailto:info@demorestaurant.ch">info@demorestaurant.ch</a>
+        </address>
+      </div>
+      <div>
+        <h2>Öffnungszeiten</h2>
+        <ul class="footer-hours">
+          <li><span>Mo</span><span>Ruhetag</span></li>
+          <li><span>Di–Do</span><span>17:30–23:00</span></li>
+          <li><span>Fr</span><span>17:30–00:00</span></li>
+          <li><span>Sa</span><span>12:00–14:30 · 17:30–00:00</span></li>
+          <li><span>So</span><span>11:30–15:00 · 17:30–22:00</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Entdecken</h2>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns</a></li><li><a href="speisekarte.html">Speisekarte</a></li><li><a href="fleisch-guide.html">Fleisch-Guide</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="oeffnungszeiten.html">Öffnungszeiten</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span data-year>2026</span> Demorestaurant – fiktives Restaurant, Demo-Website.</span>
+      <span>Bilder &amp; Videos: Pexels · <a href="quellen.txt">Quellen</a></span>
+    </div>
+  </footer>
+</body>
+</html>

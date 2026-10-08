@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fleisch-Guide – Demorestaurant</title>
+  <meta name="description" content="Der Fleisch-Guide des Demorestaurants: Ribeye, Filet, Entrecôte, T-Bone und Tomahawk erklärt – und alle Garstufen von rare bis well done interaktiv dargestellt.">
+  <meta name="theme-color" content="#0e0d0c">
+  <meta property="og:title" content="Fleisch-Guide – Demorestaurant">
+  <meta property="og:description" content="Der Fleisch-Guide des Demorestaurants: Ribeye, Filet, Entrecôte, T-Bone und Tomahawk erklärt – und alle Garstufen von rare bis well done interaktiv dargestellt.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/big-shoulders-display-normal-600-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-normal-400-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script>window.DONENESS = [{"name": "Rare", "alt": "Saignant · blutig", "temp": "48–50", "grey": 0.95, "pink": 0.9, "core": 0.72, "cGrey": "#8a6a5c", "cPink": "#c24452", "cCore": "#9a1626", "juice": 1, "desc": "Aussen kräftig angebraten, innen fast durchgehend dunkelrot und kühl-warm. Sehr saftig, ideal für mageres Filet."}, {"name": "Medium Rare", "alt": "Rosé · à point", "temp": "52–55", "grey": 0.93, "pink": 0.86, "core": 0.56, "cGrey": "#8a6a5c", "cPink": "#cf5c66", "cCore": "#b42e3c", "juice": 0.85, "desc": "Die Empfehlung unserer Küche: rosaroter, warmer Kern mit schmalem grauem Rand. Das Fett beginnt zu schmelzen – maximaler Geschmack."}, {"name": "Medium", "alt": "Rosa · medium", "temp": "56–59", "grey": 0.91, "pink": 0.79, "core": 0.34, "cGrey": "#8b6c5e", "cPink": "#d78781", "cCore": "#c8565f", "juice": 0.6, "desc": "Ein rosa Kern mit breiterem, durchgegartem Rand. Fester im Biss, immer noch saftig – gut für kräftig marmorierte Cuts."}, {"name": "Medium Well", "alt": "Fast durch", "temp": "60–64", "grey": 0.9, "pink": 0.6, "core": 0.14, "cGrey": "#8c6e60", "cPink": "#c79a8d", "cCore": "#c57d77", "juice": 0.3, "desc": "Nur noch ein Hauch von Rosa in der Mitte. Das Fleisch wird fester und gibt weniger Saft ab."}, {"name": "Well Done", "alt": "Durchgebraten", "temp": "ab 68", "grey": 0.9, "pink": 0.0, "core": 0.0, "cGrey": "#8a7062", "cPink": "#a07e70", "cCore": "#a07e70", "juice": 0, "desc": "Vollständig durchgegart, graubraun bis in den Kern. Gerne grillen wir es so für Sie – am besten eignet sich dann ein fettreicher Cut wie das Ribeye."}];</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <svg class="sr-only" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="arc-top" d="M24,100 A76,76 0 0 1 176,100"/>
+    <path id="arc-bottom" d="M14,100 A86,86 0 0 0 186,100"/>
+  </defs>
+  <symbol id="stamp-ring" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="98" fill="#141211"/>
+    <circle cx="100" cy="100" r="95" fill="none" stroke="#c8a165" stroke-width="2.5"/>
+    <circle cx="100" cy="100" r="90" fill="none" stroke="#c8a165" stroke-width=".8"/>
+    <circle cx="100" cy="100" r="64" fill="none" stroke="#c8a165" stroke-width=".8"/>
+    <text font-family="'Big Shoulders Display', 'Arial Narrow', Impact, sans-serif" font-weight="800" font-size="17" letter-spacing="2.6" fill="#c8a165"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">DEMORESTAURANT</textPath></text>
+    <text font-family="'Big Shoulders Display', 'Arial Narrow', Impact, sans-serif" font-weight="700" font-size="11.5" letter-spacing="3" fill="#c8a165"><textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">DEMOSTADT · SEIT 2009</textPath></text>
+    <path d="M18,100 l3,-2.6 3,2.6 -3,2.6z M176,100 l3,-2.6 3,2.6 -3,2.6z" fill="#b8733f"/>
+  </symbol>
+  <symbol id="stamp-core" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="60" fill="#141211" stroke="#c8a165" stroke-width="2"/>
+    <path d="M100,94 C84,94 76,84 77,72 C78,60 88,54 90,44 C96,52 98,58 97,64 C102,58 104,52 103,46 C114,56 124,68 123,78 C122,88 114,94 100,94 Z" fill="#b8733f"/>
+    <path d="M100,92 C93,92 89,87 90,81 C91,75 96,72 97,66 C101,72 108,77 108,83 C108,88 105,92 100,92 Z" fill="#e3b779"/>
+    <path d="M38,100 L162,100 L155,110.5 L162,121 L38,121 L45,110.5 Z" fill="#6b1420" stroke="#c8a165" stroke-width="1.2"/>
+    <text x="100" y="115.5" text-anchor="middle" font-family="'Big Shoulders Display', 'Arial Narrow', Impact, sans-serif" font-weight="800" font-size="13" letter-spacing="2.4" fill="#efe6d6">STEAKHOUSE</text>
+    <text x="100" y="140" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-size="11" fill="#c8a165">Feuer &amp; Fleisch</text>
+    <path d="M86,150 l1.5,3 3.3,.4 -2.4,2.3 .6,3.3 -3,-1.6 -3,1.6 .6,-3.3 -2.4,-2.3 3.3,-.4z M100,150 l1.5,3 3.3,.4 -2.4,2.3 .6,3.3 -3,-1.6 -3,1.6 .6,-3.3 -2.4,-2.3 3.3,-.4z M114,150 l1.5,3 3.3,.4 -2.4,2.3 .6,3.3 -3,-1.6 -3,1.6 .6,-3.3 -2.4,-2.3 3.3,-.4z" fill="#c8a165"/>
+  </symbol>
+  <symbol id="stamp" viewBox="0 0 200 200"><use href="#stamp-ring"/><use href="#stamp-core"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-glass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-.6 5.5a4.4 4.4 0 0 1-8.8 0z"/><path d="M12 13v8M8 21h8"/><path d="M7.4 7h9.2" opacity=".6"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 44c-8 0-13-5.5-12.5-12.5S19 21 20 14c4 4.5 5 8 4.4 11.5C27.5 22 29 18 28 14c6.5 5.5 9.5 12.5 9 18.5S32 44 24 44z"/><path d="M24 42c-3.5 0-5.6-2.6-5-6s3.4-5 4-8.5c2.6 3.4 6.4 5.8 6.4 9.4 0 3-2.2 5.1-5.4 5.1z"/></symbol>
+  <symbol id="i-clock48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="5" width="30" height="38" rx="2"/><path d="M14 12h20M14 18h20M14 24h20M14 30h12"/><circle cx="34" cy="36" r="7" fill="#0e0d0c"/><path d="M34 32.5V36l2.4 1.6"/></symbol>
+  <symbol id="i-farm" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 42h40M8 42V22l10-8 10 8v20"/><path d="M14 42V30h8v12M28 26h12v16"/><path d="M34 26V14l4-4 4 4v12"/><path d="M4 42c6-4 10-4 16 0"/></symbol>
+  <symbol id="i-knife" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M6 36 34 8c4 4 4 12-2 18L20 38z"/><path d="m20 38 4 4 4-4-4-4M30 42l12-12"/><circle cx="36" cy="36" r="1.2"/></symbol>
+  <symbol id="i-train" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="12" y="6" width="24" height="30" rx="5"/><path d="M12 22h24M18 30h.01M30 30h.01M16 42l4-6M32 42l-4-6"/></symbol>
+  <symbol id="i-car" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M6 32V24l5-10h26l5 10v8z"/><path d="M6 24h36M10 32v5h6v-5M32 32v5h6v-5"/><circle cx="14" cy="28" r="1.3"/><circle cx="34" cy="28" r="1.3"/></symbol>
+  <symbol id="i-bike" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="32" r="8"/><circle cx="36" cy="32" r="8"/><path d="m12 32 7-14h12l5 14M19 18l7 14h10M17 12h6M30 12h5l-4 6"/></symbol>
+</svg>
+  <div class="page-curtain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Demorestaurant – zur Startseite">
+      <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true"><use href="#stamp"/></svg>
+      <span class="brand-name">Demorestaurant<small>Steakhouse · Demostadt</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="speisekarte.html">Speisekarte</a></li>
+        <li><a href="fleisch-guide.html" aria-current="page">Fleisch-Guide</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="oeffnungszeiten.html">Öffnungszeiten</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a class="btn nav-cta" href="reservation.html">Tisch reservieren</a>
+      <p class="nav-meta">Feuerstrasse 12 · 9999 Demostadt<br><a href="tel:+41440000000">044 000 00 00</a></p>
+    </nav>
+    <a class="btn btn--small header-cta" href="reservation.html">Reservieren</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="sr-only">Menü öffnen</span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="img/tomahawk-flamme-sm.webp" srcset="img/tomahawk-flamme-sm.webp 507w, img/tomahawk-flamme.webp 1067w" sizes="100vw" width="1067" height="1600" alt="Tomahawk-Steak wird mit einem Brenner abgeflammt" fetchpriority="high" decoding="async"></div>
+      <div class="wrap">
+        <p class="eyebrow">Fleisch-Guide</p>
+        <h1><span class="script">Wissen, was auf den Teller kommt</span>Cuts &amp; Garstufen</h1>
+        <p class="lead" data-reveal style="--d:.2s">Welches Stück stammt woher, wie unterscheiden sich Ribeye und Entrecôte – und was heisst eigentlich «medium rare»? Hier finden Sie alle Antworten.</p>
+      </div>
+    </section>
+
+    <section class="section" id="cuts" aria-labelledby="cuts-h">
+      <div class="wrap">
+        <div class="cow-wrap">
+          <div data-reveal="scale">
+<svg class="cow" viewBox="20 40 570 290" role="group" aria-label="Schematische Darstellung eines Rindes mit den Teilstücken">
+              <defs><clipPath id="cow-clip"><path d="M120,92 C165,68 230,60 300,62 C380,64 450,58 505,68 C532,73 548,92 548,118 C552,128 556,140 560,170 C563,190 566,214 572,236 L564,240 C557,216 553,196 549,170 C547,184 541,196 534,206 L530,312 L506,312 L500,236 C470,244 430,248 400,246 C340,254 260,252 206,240 L202,312 L178,312 L174,228 C160,216 150,202 140,188 C128,172 118,162 104,158 C90,170 70,180 52,178 C38,177 30,168 32,156 C34,140 44,124 58,112 L70,98 L60,82 L80,88 C92,86 106,88 120,92 Z"/></clipPath></defs>
+              <path class="silhouette" d="M120,92 C165,68 230,60 300,62 C380,64 450,58 505,68 C532,73 548,92 548,118 C552,128 556,140 560,170 C563,190 566,214 572,236 L564,240 C557,216 553,196 549,170 C547,184 541,196 534,206 L530,312 L506,312 L500,236 C470,244 430,248 400,246 C340,254 260,252 206,240 L202,312 L178,312 L174,228 C160,216 150,202 140,188 C128,172 118,162 104,158 C90,170 70,180 52,178 C38,177 30,168 32,156 C34,140 44,124 58,112 L70,98 L60,82 L80,88 C92,86 106,88 120,92 Z"/>
+              <g clip-path="url(#cow-clip)">
+                <path class="region" data-region="hals" d="M0,0 H165 V340 H0 Z"/><path class="region" data-region="schulter" d="M165,0 H250 V165 H165 Z"/><path class="region" data-region="brust" d="M120,165 H250 V340 H120 Z"/><path class="region is-cut" data-region="hochrippe" data-cut="ribeye" d="M250,0 H330 V150 H250 Z" tabindex="0" role="button" aria-label="Hochrippe – zum Cut springen"/><path class="region is-cut" data-region="roastbeef" data-cut="entrecote" d="M330,0 H420 V122 H330 Z" tabindex="0" role="button" aria-label="Nierstück – zum Cut springen"/><path class="region is-cut" data-region="filet" data-cut="filet" d="M330,122 H420 V156 H330 Z" tabindex="0" role="button" aria-label="Filet – zum Cut springen"/><path class="region" data-region="bauch" d="M250,150 H330 V156 H420 V340 H250 Z"/><path class="region" data-region="stotzen" d="M420,0 H600 V340 H420 Z"/>
+              </g>
+              <path class="details" d="M48,148 a4,4 0 1 0 0.1,0 M60,82 C66,74 76,70 84,72"/>
+              <path class="silhouette" d="M120,92 C165,68 230,60 300,62 C380,64 450,58 505,68 C532,73 548,92 548,118 C552,128 556,140 560,170 C563,190 566,214 572,236 L564,240 C557,216 553,196 549,170 C547,184 541,196 534,206 L530,312 L506,312 L500,236 C470,244 430,248 400,246 C340,254 260,252 206,240 L202,312 L178,312 L174,228 C160,216 150,202 140,188 C128,172 118,162 104,158 C90,170 70,180 52,178 C38,177 30,168 32,156 C34,140 44,124 58,112 L70,98 L60,82 L80,88 C92,86 106,88 120,92 Z" style="fill:none;pointer-events:none"/>
+              <text class="label" x="92" y="140" text-anchor="middle">Hals</text><text class="label" x="207" y="118" text-anchor="middle">Schulter</text><text class="label" x="200" y="210" text-anchor="middle">Brust</text><text class="label is-cut-label" x="290" y="108" text-anchor="middle">Hochrippe</text><text class="label is-cut-label" x="375" y="98" text-anchor="middle">Nierstück</text><text class="label is-cut-label" x="375" y="144" text-anchor="middle">Filet</text><text class="label" x="330" y="210" text-anchor="middle">Bauch</text><text class="label" x="482" y="140" text-anchor="middle">Stotzen</text>
+            </svg>
+          </div>
+          <div>
+            <p class="eyebrow" data-reveal>Die Teilstücke</p>
+            <h2 id="cuts-h" data-reveal style="--d:.1s"><span class="script">Woher kommt mein Steak?</span>Fünf Cuts im Porträt</h2>
+            <p class="muted" data-reveal style="--d:.2s">Die besten Steaks stammen aus dem Rücken des Rindes – dort, wo die Muskeln am wenigsten arbeiten und darum besonders zart sind. Tippen Sie auf eine markierte Zone oder wählen Sie unten einen Cut.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:clamp(48px,6vw,80px)">
+          <div class="cut-tabs" role="tablist" aria-label="Steak-Cuts"><button class="cut-tab" type="button" role="tab" id="tab-ribeye" data-cut="ribeye" aria-controls="cut-ribeye" aria-selected="true">Ribeye</button><button class="cut-tab" type="button" role="tab" id="tab-filet" data-cut="filet" aria-controls="cut-filet" aria-selected="false">Filet</button><button class="cut-tab" type="button" role="tab" id="tab-entrecote" data-cut="entrecote" aria-controls="cut-entrecote" aria-selected="false">Entrecôte</button><button class="cut-tab" type="button" role="tab" id="tab-tbone" data-cut="tbone" aria-controls="cut-tbone" aria-selected="false">T-Bone</button><button class="cut-tab" type="button" role="tab" id="tab-tomahawk" data-cut="tomahawk" aria-controls="cut-tomahawk" aria-selected="false">Tomahawk</button></div>
+          <article class="cut-panel" id="cut-ribeye" role="tabpanel" aria-labelledby="tab-ribeye" data-regions="hochrippe">
+            <div class="frame frame--gold"><img src="img/ribeye-dunkel-sm.webp" srcset="img/ribeye-dunkel-sm.webp 570w, img/ribeye-dunkel.webp 1199w" sizes="(max-width: 860px) 90vw, 45vw" width="1199" height="1600" alt="Rohes Ribeye mit deutlicher Marmorierung" loading="lazy" decoding="async"></div>
+            <div class="cut-info">
+              <h3>Ribeye</h3>
+              <p class="origin">Aus der Hochrippe (Hohrücken)</p>
+              <p>Das Ribeye stammt aus dem vorderen Rücken, wo der Muskel wenig arbeitet. Sein Markenzeichen ist das «Eye» – ein Fettauge in der Mitte, das beim Grillen schmilzt und das Fleisch von innen saftig hält. Für viele das geschmackvollste Steak überhaupt.</p>
+              <div class="meters"><div class="meter"><span>Marmorierung</span><span class="meter__bar" role="img" aria-label="5 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="on" style="--n:4"></i></span></div><div class="meter"><span>Zartheit</span><span class="meter__bar" role="img" aria-label="4 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Geschmack</span><span class="meter__bar" role="img" aria-label="5 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="on" style="--n:4"></i></span></div></div>
+              <dl class="facts"><div><dt>Typisches Gewicht</dt><dd>300–400 g</dd></div><div><dt>Empfohlen</dt><dd>Medium Rare</dd></div><div><dt>Profi-Tipp</dt><dd style="font-size:1rem">Nicht zu blutig: Das Fett braucht Hitze</dd></div></dl>
+            </div>
+          </article>
+          <article class="cut-panel" id="cut-filet" role="tabpanel" aria-labelledby="tab-filet" data-regions="filet">
+            <div class="frame frame--gold"><img src="img/filet-sm.webp" srcset="img/filet-sm.webp 760w, img/filet.webp 1600w" sizes="(max-width: 860px) 90vw, 45vw" width="1600" height="1066" alt="Filetsteak mit Kräutern auf schwarzem Teller" loading="lazy" decoding="async"></div>
+            <div class="cut-info">
+              <h3>Filet</h3>
+              <p class="origin">Aus der Lende, unter dem Rücken</p>
+              <p>Das Filet ist der Muskel, der am wenigsten bewegt wird – darum ist es das zarteste Stück des Rindes. Es ist mager und mild im Geschmack, ideal mit einer kräftigen Sauce wie Béarnaise oder Café de Paris.</p>
+              <div class="meters"><div class="meter"><span>Marmorierung</span><span class="meter__bar" role="img" aria-label="2 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="" style="--n:2"></i><i class="" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Zartheit</span><span class="meter__bar" role="img" aria-label="5 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="on" style="--n:4"></i></span></div><div class="meter"><span>Geschmack</span><span class="meter__bar" role="img" aria-label="3 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="" style="--n:3"></i><i class="" style="--n:4"></i></span></div></div>
+              <dl class="facts"><div><dt>Typisches Gewicht</dt><dd>180–250 g</dd></div><div><dt>Empfohlen</dt><dd>Rare – Medium Rare</dd></div><div><dt>Profi-Tipp</dt><dd style="font-size:1rem">Hoch geschnitten, kurz und heiss</dd></div></dl>
+            </div>
+          </article>
+          <article class="cut-panel" id="cut-entrecote" role="tabpanel" aria-labelledby="tab-entrecote" data-regions="roastbeef">
+            <div class="frame frame--gold"><img src="img/entrecote-sm.webp" srcset="img/entrecote-sm.webp 570w, img/entrecote.webp 1200w" sizes="(max-width: 860px) 90vw, 45vw" width="1200" height="1600" alt="Gegrilltes Entrecôte mit Pfeffersauce" loading="lazy" decoding="async"></div>
+            <div class="cut-info">
+              <h3>Entrecôte</h3>
+              <p class="origin">Aus dem Nierstück (Roastbeef)</p>
+              <p>In der Schweiz ein Klassiker: Das Entrecôte stammt aus dem hinteren Rücken und trägt einen typischen Fettrand. Es ist etwas fester als das Ribeye, hat aber einen ausgeprägten, kräftigen Rindfleischgeschmack – besonders nach dem Dry Aging.</p>
+              <div class="meters"><div class="meter"><span>Marmorierung</span><span class="meter__bar" role="img" aria-label="3 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Zartheit</span><span class="meter__bar" role="img" aria-label="4 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Geschmack</span><span class="meter__bar" role="img" aria-label="4 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="" style="--n:4"></i></span></div></div>
+              <dl class="facts"><div><dt>Typisches Gewicht</dt><dd>250–350 g</dd></div><div><dt>Empfohlen</dt><dd>Medium Rare</dd></div><div><dt>Profi-Tipp</dt><dd style="font-size:1rem">Fettrand einschneiden, sonst wölbt es sich</dd></div></dl>
+            </div>
+          </article>
+          <article class="cut-panel" id="cut-tbone" role="tabpanel" aria-labelledby="tab-tbone" data-regions="roastbeef filet">
+            <div class="frame frame--gold"><img src="img/tbone-sm.webp" srcset="img/tbone-sm.webp 507w, img/tbone.webp 1067w" sizes="(max-width: 860px) 90vw, 45vw" width="1067" height="1600" alt="T-Bone-Steak mit Sauce und Zitrone" loading="lazy" decoding="async"></div>
+            <div class="cut-info">
+              <h3>T-Bone</h3>
+              <p class="origin">Nierstück mit Knochen: Roastbeef + Filet</p>
+              <p>Zwei Steaks in einem: Auf der einen Seite des T-förmigen Knochens liegt das Roastbeef, auf der anderen ein Stück Filet. Der Knochen leitet Wärme und gibt zusätzliches Aroma. Ist der Filetanteil besonders gross, spricht man vom Porterhouse.</p>
+              <div class="meters"><div class="meter"><span>Marmorierung</span><span class="meter__bar" role="img" aria-label="3 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Zartheit</span><span class="meter__bar" role="img" aria-label="4 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Geschmack</span><span class="meter__bar" role="img" aria-label="5 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="on" style="--n:4"></i></span></div></div>
+              <dl class="facts"><div><dt>Typisches Gewicht</dt><dd>500–800 g</dd></div><div><dt>Empfohlen</dt><dd>Medium Rare</dd></div><div><dt>Profi-Tipp</dt><dd style="font-size:1rem">Filetseite etwas weiter weg von der Glut</dd></div></dl>
+            </div>
+          </article>
+          <article class="cut-panel" id="cut-tomahawk" role="tabpanel" aria-labelledby="tab-tomahawk" data-regions="hochrippe">
+            <div class="frame frame--gold"><img src="img/tomahawk-brett-sm.webp" srcset="img/tomahawk-brett-sm.webp 427w, img/tomahawk-brett.webp 900w" sizes="(max-width: 860px) 90vw, 45vw" width="900" height="1600" alt="Tomahawk-Steak auf einem Holzbrett" loading="lazy" decoding="async"></div>
+            <div class="cut-info">
+              <h3>Tomahawk</h3>
+              <p class="origin">Hochrippe mit langem Rippenknochen</p>
+              <p>Der Tomahawk ist ein Ribeye mit dem ganzen, sauber freigelegten Rippenknochen – benannt nach seiner Form, die an ein Beil erinnert. Mit über einem Kilo ist er ein Steak zum Teilen. Wir garen ihn rückwärts: erst sanft, dann heiss angegrillt.</p>
+              <div class="meters"><div class="meter"><span>Marmorierung</span><span class="meter__bar" role="img" aria-label="5 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="on" style="--n:4"></i></span></div><div class="meter"><span>Zartheit</span><span class="meter__bar" role="img" aria-label="4 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="" style="--n:4"></i></span></div><div class="meter"><span>Geschmack</span><span class="meter__bar" role="img" aria-label="5 von 5"><i class="on" style="--n:0"></i><i class="on" style="--n:1"></i><i class="on" style="--n:2"></i><i class="on" style="--n:3"></i><i class="on" style="--n:4"></i></span></div></div>
+              <dl class="facts"><div><dt>Typisches Gewicht</dt><dd>1.0–1.4 kg</dd></div><div><dt>Empfohlen</dt><dd>Medium Rare</dd></div><div><dt>Profi-Tipp</dt><dd style="font-size:1rem">Reverse Sear: erst niedrig, dann scharf</dd></div></dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--concrete" id="garstufen" aria-labelledby="gar-h">
+      <div class="wrap">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-reveal>Garstufen</p>
+          <h2 id="gar-h" data-reveal style="--d:.1s"><span class="script">Von rare bis well done</span>Wie hätten Sie's gern?</h2>
+          <p data-reveal style="--d:.2s">Ziehen Sie den Regler und sehen Sie, wie sich der Querschnitt des Steaks verändert. Die Temperaturen gelten für den Kern, gemessen nach dem Ruhen.</p>
+        </div>
+        <div class="doneness">
+          <div data-reveal="scale">
+            <svg class="steak-svg" id="steak-big" viewBox="0 0 300 180" role="img" aria-label="Querschnitt eines Steaks in der gewählten Garstufe">
+                <path d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" fill="#3a1d0f"/>
+                <path d="M58,42 C100,22 200,20 246,40" fill="none" stroke="#ead8c0" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+                <path class="layer l-grey" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.93);fill:#8a6a5c"/>
+                <path class="layer l-pink" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.86);fill:#cf5c66"/>
+                <path class="layer l-core" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.56);fill:#b42e3c"/>
+                <g fill="none" stroke="#fff3e6" stroke-linecap="round" opacity=".22" stroke-width="1.4">
+                  <path d="M80,70 C110,60 130,82 160,72 C185,64 200,80 225,74"/><path d="M70,110 C100,100 120,120 150,112"/><path d="M170,120 C190,112 215,126 240,112"/><path d="M110,92 C125,88 135,96 150,92"/>
+                </g>
+                <ellipse class="l-juice" cx="120" cy="70" rx="46" ry="12" fill="#fff" opacity="0.15" style="mix-blend-mode:soft-light"/>
+              </svg>
+          </div>
+          <div class="doneness__board" data-reveal="right">
+            <div class="doneness__readout">
+              <div>
+                <p class="doneness__name" id="d-name">Medium Rare</p>
+                <p class="doneness__alt" id="d-alt">Rosé · à point</p>
+              </div>
+              <p class="doneness__temp" id="d-temp">52–55<small>°C KERN</small></p>
+            </div>
+            <p class="doneness__desc" id="d-desc" aria-live="polite">Die Empfehlung unserer Küche: rosaroter, warmer Kern mit schmalem grauem Rand. Das Fett beginnt zu schmelzen – maximaler Geschmack.</p>
+            <label class="sr-only" for="doneness-range">Garstufe wählen</label>
+            <input class="range" id="doneness-range" type="range" min="0" max="400" step="1" value="100">
+            <div class="range-labels" aria-hidden="true"><span>Rare</span><span>Medium</span><span>Well Done</span></div>
+          </div>
+        </div>
+        <div class="doneness-row">
+          <button class="d-card" type="button" aria-pressed="false" data-reveal style="--d:0.00s">
+            <svg class="steak-svg" viewBox="0 0 300 180" aria-hidden="true">
+                <path d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" fill="#3a1d0f"/>
+                <path d="M58,42 C100,22 200,20 246,40" fill="none" stroke="#ead8c0" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+                <path class="layer l-grey" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.95);fill:#8a6a5c"/>
+                <path class="layer l-pink" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.9);fill:#c24452"/>
+                <path class="layer l-core" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.72);fill:#9a1626"/>
+                <g fill="none" stroke="#fff3e6" stroke-linecap="round" opacity=".22" stroke-width="1.4">
+                  <path d="M80,70 C110,60 130,82 160,72 C185,64 200,80 225,74"/><path d="M70,110 C100,100 120,120 150,112"/><path d="M170,120 C190,112 215,126 240,112"/><path d="M110,92 C125,88 135,96 150,92"/>
+                </g>
+                <ellipse class="l-juice" cx="120" cy="70" rx="46" ry="12" fill="#fff" opacity="0.17" style="mix-blend-mode:soft-light"/>
+              </svg>
+            <strong>Rare</strong>
+            <em>Saignant · blutig</em>
+            <span>48–50 °C Kerntemperatur</span>
+          </button>
+          <button class="d-card is-active" type="button" aria-pressed="true" data-reveal style="--d:0.08s">
+            <svg class="steak-svg" viewBox="0 0 300 180" aria-hidden="true">
+                <path d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" fill="#3a1d0f"/>
+                <path d="M58,42 C100,22 200,20 246,40" fill="none" stroke="#ead8c0" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+                <path class="layer l-grey" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.93);fill:#8a6a5c"/>
+                <path class="layer l-pink" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.86);fill:#cf5c66"/>
+                <path class="layer l-core" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.56);fill:#b42e3c"/>
+                <g fill="none" stroke="#fff3e6" stroke-linecap="round" opacity=".22" stroke-width="1.4">
+                  <path d="M80,70 C110,60 130,82 160,72 C185,64 200,80 225,74"/><path d="M70,110 C100,100 120,120 150,112"/><path d="M170,120 C190,112 215,126 240,112"/><path d="M110,92 C125,88 135,96 150,92"/>
+                </g>
+                <ellipse class="l-juice" cx="120" cy="70" rx="46" ry="12" fill="#fff" opacity="0.15" style="mix-blend-mode:soft-light"/>
+              </svg>
+            <strong>Medium Rare</strong>
+            <em>Rosé · à point</em>
+            <span>52–55 °C Kerntemperatur</span>
+          </button>
+          <button class="d-card" type="button" aria-pressed="false" data-reveal style="--d:0.16s">
+            <svg class="steak-svg" viewBox="0 0 300 180" aria-hidden="true">
+                <path d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" fill="#3a1d0f"/>
+                <path d="M58,42 C100,22 200,20 246,40" fill="none" stroke="#ead8c0" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+                <path class="layer l-grey" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.91);fill:#8b6c5e"/>
+                <path class="layer l-pink" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.79);fill:#d78781"/>
+                <path class="layer l-core" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.34);fill:#c8565f"/>
+                <g fill="none" stroke="#fff3e6" stroke-linecap="round" opacity=".22" stroke-width="1.4">
+                  <path d="M80,70 C110,60 130,82 160,72 C185,64 200,80 225,74"/><path d="M70,110 C100,100 120,120 150,112"/><path d="M170,120 C190,112 215,126 240,112"/><path d="M110,92 C125,88 135,96 150,92"/>
+                </g>
+                <ellipse class="l-juice" cx="120" cy="70" rx="46" ry="12" fill="#fff" opacity="0.12" style="mix-blend-mode:soft-light"/>
+              </svg>
+            <strong>Medium</strong>
+            <em>Rosa · medium</em>
+            <span>56–59 °C Kerntemperatur</span>
+          </button>
+          <button class="d-card" type="button" aria-pressed="false" data-reveal style="--d:0.24s">
+            <svg class="steak-svg" viewBox="0 0 300 180" aria-hidden="true">
+                <path d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" fill="#3a1d0f"/>
+                <path d="M58,42 C100,22 200,20 246,40" fill="none" stroke="#ead8c0" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+                <path class="layer l-grey" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.9);fill:#8c6e60"/>
+                <path class="layer l-pink" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.6);fill:#c79a8d"/>
+                <path class="layer l-core" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.14);fill:#c57d77"/>
+                <g fill="none" stroke="#fff3e6" stroke-linecap="round" opacity=".22" stroke-width="1.4">
+                  <path d="M80,70 C110,60 130,82 160,72 C185,64 200,80 225,74"/><path d="M70,110 C100,100 120,120 150,112"/><path d="M170,120 C190,112 215,126 240,112"/><path d="M110,92 C125,88 135,96 150,92"/>
+                </g>
+                <ellipse class="l-juice" cx="120" cy="70" rx="46" ry="12" fill="#fff" opacity="0.09" style="mix-blend-mode:soft-light"/>
+              </svg>
+            <strong>Medium Well</strong>
+            <em>Fast durch</em>
+            <span>60–64 °C Kerntemperatur</span>
+          </button>
+          <button class="d-card" type="button" aria-pressed="false" data-reveal style="--d:0.32s">
+            <svg class="steak-svg" viewBox="0 0 300 180" aria-hidden="true">
+                <path d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" fill="#3a1d0f"/>
+                <path d="M58,42 C100,22 200,20 246,40" fill="none" stroke="#ead8c0" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+                <path class="layer l-grey" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.9);fill:#8a7062"/>
+                <path class="layer l-pink" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.0);fill:#a07e70"/>
+                <path class="layer l-core" d="M30,95 C25,50 80,22 150,24 C225,26 278,48 275,95 C272,140 220,160 150,158 C80,156 34,140 30,95Z" style="transform:scale(0.0);fill:#a07e70"/>
+                <g fill="none" stroke="#fff3e6" stroke-linecap="round" opacity=".22" stroke-width="1.4">
+                  <path d="M80,70 C110,60 130,82 160,72 C185,64 200,80 225,74"/><path d="M70,110 C100,100 120,120 150,112"/><path d="M170,120 C190,112 215,126 240,112"/><path d="M110,92 C125,88 135,96 150,92"/>
+                </g>
+                <ellipse class="l-juice" cx="120" cy="70" rx="46" ry="12" fill="#fff" opacity="0.05" style="mix-blend-mode:soft-light"/>
+              </svg>
+            <strong>Well Done</strong>
+            <em>Durchgebraten</em>
+            <span>ab 68 °C Kerntemperatur</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Vom Grillmeister</p>
+          <h2 data-reveal style="--d:.1s">Vier Regeln für das perfekte Steak</h2>
+        </div>
+        <div class="tips">
+          <article class="tip" data-reveal><h3>Temperieren</h3><p>Das Fleisch 30–45 Minuten vor dem Grillen aus dem Kühlschrank nehmen. So gart es gleichmässig.</p></article>
+          <article class="tip" data-reveal style="--d:.1s"><h3>Grosse Hitze</h3><p>Eine heisse Oberfläche sorgt für die Maillard-Reaktion – die aromatische, braune Kruste.</p></article>
+          <article class="tip" data-reveal style="--d:.2s"><h3>Ruhen lassen</h3><p>Nach dem Grillen 5–8 Minuten ruhen lassen. Der Saft verteilt sich, statt auf dem Teller zu landen.</p></article>
+          <article class="tip" data-reveal style="--d:.3s"><h3>Erst am Schluss salzen</h3><p>Grobes Meersalz oder Fleur de Sel direkt vor dem Servieren – für Biss und Geschmack.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--anthracite">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="eyebrow" data-reveal>Dry Aging</p>
+            <h2 data-reveal style="--d:.1s"><span class="script">Zeit als Zutat</span>Was Reifung bewirkt</h2>
+            <p class="muted" data-reveal style="--d:.2s">Beim Dry Aging reift das Fleisch am Knochen, unverpackt, bei 1–2&nbsp;°C und rund 80&nbsp;% Luftfeuchtigkeit. Körpereigene Enzyme lockern die Muskelfasern, gleichzeitig verdunstet Wasser – das Aroma konzentriert sich und erinnert an Nüsse und Butter.</p>
+            <p class="muted" data-reveal style="--d:.3s">Der Preis dafür: bis zu 30&nbsp;% Gewichtsverlust und eine dunkle Kruste, die vor dem Portionieren abgeschnitten wird. Darum ist Dry Aged Beef teurer – und jeden Franken wert.</p>
+          </div>
+          <div class="frame frame--wide blob" data-reveal="iris">
+            <img src="img/metzger-sm.webp" srcset="img/metzger-sm.webp 760w, img/metzger.webp 1600w" sizes="(max-width: 900px) 90vw, 45vw" width="1600" height="1067" alt="Metzger mit T-Bone-Steak im Reifeschrank" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" style="background-image:url('video/glut-poster.jpg')">
+      <video muted loop playsinline preload="none" poster="video/glut-poster.jpg" data-src="video/glut.mp4" aria-hidden="true"></video>
+      <div class="wrap wrap--narrow">
+        <p class="eyebrow eyebrow--center" data-reveal>Der Grill ist heiss</p>
+        <h2 data-reveal style="--d:.1s"><span class="script">Ihr Platz am Feuer</span>Tisch reservieren</h2>
+        <p data-reveal style="--d:.2s">Ob Dinner zu zweit, Geschäftsessen oder Tomahawk für die ganze Runde – wir halten Ihnen einen Tisch warm.</p>
+        <div class="btn-row" data-reveal style="--d:.3s">
+          <a class="btn" href="reservation.html">Jetzt reservieren</a>
+          <a class="btn btn--ghost" href="tel:+41440000000">044 000 00 00</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wood-band" aria-hidden="true"></div>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true"><use href="#stamp"/></svg>
+        <p>Steakhouse mit Fine-Dining-Seele. Ausgewählte Cuts, 800&nbsp;°C heisser Grill und eine Weinkarte, die Fleisch liebt.</p>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <address>
+          Demorestaurant<br>Feuerstrasse 12<br>9999 Demostadt<br>
+          <a href="tel:+41440000000">044 000 00 00</a><br>
+          <a href="mailto:info@demorestaurant.ch">info@demorestaurant.ch</a>
+        </address>
+      </div>
+      <div>
+        <h2>Öffnungszeiten</h2>
+        <ul class="footer-hours">
+          <li><span>Mo</span><span>Ruhetag</span></li>
+          <li><span>Di–Do</span><span>17:30–23:00</span></li>
+          <li><span>Fr</span><span>17:30–00:00</span></li>
+          <li><span>Sa</span><span>12:00–14:30 · 17:30–00:00</span></li>
+          <li><span>So</span><span>11:30–15:00 · 17:30–22:00</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Entdecken</h2>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns</a></li><li><a href="speisekarte.html">Speisekarte</a></li><li><a href="fleisch-guide.html">Fleisch-Guide</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="oeffnungszeiten.html">Öffnungszeiten</a></li><li><a href="reservation.html">Reservation</a></li><li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span data-year>2026</span> Demorestaurant – fiktives Restaurant, Demo-Website.</span>
+      <span>Bilder &amp; Videos: Pexels · <a href="quellen.txt">Quellen</a></span>
+    </div>
+  </footer>
+</body>
+</html>
